@@ -1,0 +1,87 @@
+body {
+    background-image: url(./img/bg.jpg);
+    justify-items: center;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    padding: 0 50px;
+    background-image: url(./img/container.jpg);
+    background-size: cover;
+    box-shadow: 1px 10px 20px #000;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 350px;
+
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    opacity: 0.5;
+}
+
+
+/* Drap and drop */
+
+body .drop-zone {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 50%;
+}
+
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drop-message {
+    font-size: 18px;
+    color: #777;
+}
+
+.drop-zone.dragged {
+    border-color: #333;
+}
+
+#createimg {
+    margin-bottom: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 300px;
+}
+
+#storeUri {
+    position: absolute;
+    top: 58%;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.drap {
+    padding: 50px;
+}
